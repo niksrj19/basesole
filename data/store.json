@@ -1,0 +1,689 @@
+{
+  "users": [
+    {
+      "id": "user-default",
+      "email": "NIKKYRJ.TAK@gmail.com",
+      "name": "Nikky Tak",
+      "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
+      "role": "CUSTOMER",
+      "preferredSize": 9.5,
+      "phoneNumber": "+1 (555) 234-5678",
+      "createdAt": "2026-08-18T08:22:24.851Z"
+    },
+    {
+      "id": "user-admin",
+      "email": "admin.solevault@gmail.com",
+      "name": "SoleVault Admin",
+      "avatarUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80",
+      "role": "ADMIN",
+      "preferredSize": 10,
+      "phoneNumber": "+1 (555) 987-6543",
+      "createdAt": "2026-07-19T08:22:24.851Z"
+    },
+    {
+      "id": "user-r18xnjr",
+      "email": "niksrj.tak@gmail.com",
+      "name": "Nitesh Tak",
+      "avatarUrl": "https://lh3.googleusercontent.com/a/ACg8ocIuLgDA_K-Pj4tPOOyvqBmw1k2jrnEUGOY3NRs6djfh998bDff6=s96-c",
+      "role": "CUSTOMER",
+      "preferredSize": 9.5,
+      "phoneNumber": "",
+      "createdAt": "2026-09-17T11:22:24.027Z"
+    }
+  ],
+  "refreshTokens": [
+    {
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJ1c2VyLWRlZmF1bHQiLCJlbWFpbCI6Ik5JS0tZUkouVEFLQGdtYWlsLmNvbSIsInJvbGUiOiJDVVNUT01FUiIsImlhdCI6MTc4OTYzMzM5NywiZXhwIjoxNzkwMjM4MTk3fQ.pK6MwoDPbXURahjUtamEo6dtgWTTuvm6X-gsQPwYyHs",
+      "userId": "user-default",
+      "expiresAt": "2026-09-24T08:23:17.852Z"
+    },
+    {
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJ1c2VyLWFkbWluIiwiZW1haWwiOiJhZG1pbi5zb2xldmF1bHRAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzg5NjMzNDg5LCJleHAiOjE3OTAyMzgyODl9.RAmLgmNrJ0mz1v0-i82GwSCupNmPmT17E3EL4uf0L3o",
+      "userId": "user-admin",
+      "expiresAt": "2026-09-24T08:24:49.817Z"
+    },
+    {
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJ1c2VyLWRlZmF1bHQiLCJlbWFpbCI6Ik5JS0tZUkouVEFLQGdtYWlsLmNvbSIsInJvbGUiOiJDVVNUT01FUiIsImlhdCI6MTc4OTYzMzQ5MSwiZXhwIjoxNzkwMjM4MjkxfQ.luIQYoPd7pwcdPCpZEPOTHzhT9JONEHTrEK0Ml00Drw",
+      "userId": "user-default",
+      "expiresAt": "2026-09-24T08:24:51.134Z"
+    },
+    {
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJ1c2VyLWFkbWluIiwiZW1haWwiOiJhZG1pbi5zb2xldmF1bHRAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzg5NjMzNDkxLCJleHAiOjE3OTAyMzgyOTF9.FjBC8rTC53BNpqPYqVtLyq7xmbxJFfANPWDRvgXX5s8",
+      "userId": "user-admin",
+      "expiresAt": "2026-09-24T08:24:51.693Z"
+    },
+    {
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJ1c2VyLWRlZmF1bHQiLCJlbWFpbCI6Ik5JS0tZUkouVEFLQGdtYWlsLmNvbSIsInJvbGUiOiJDVVNUT01FUiIsImlhdCI6MTc4OTYzMzQ5NCwiZXhwIjoxNzkwMjM4Mjk0fQ.WMM7JVn7azQl343FjY5aD3Sz9xZoDNqLQyfjUQb46JU",
+      "userId": "user-default",
+      "expiresAt": "2026-09-24T08:24:54.420Z"
+    },
+    {
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJ1c2VyLWFkbWluIiwiZW1haWwiOiJhZG1pbi5zb2xldmF1bHRAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzg5NjMzNDk1LCJleHAiOjE3OTAyMzgyOTV9.E6JaNM9nyOfznUHe2oyorQUO7vRtpexzZIgZKQjomZE",
+      "userId": "user-admin",
+      "expiresAt": "2026-09-24T08:24:55.306Z"
+    },
+    {
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJ1c2VyLWRlZmF1bHQiLCJlbWFpbCI6Ik5JS0tZUkouVEFLQGdtYWlsLmNvbSIsInJvbGUiOiJDVVNUT01FUiIsImlhdCI6MTc4OTYzMzQ5NiwiZXhwIjoxNzkwMjM4Mjk2fQ.M6QtFaKa-Okk2Et9MKbKDDhPI6tRgiZ4-droVN4NDo0",
+      "userId": "user-default",
+      "expiresAt": "2026-09-24T08:24:56.540Z"
+    },
+    {
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJ1c2VyLWRlZmF1bHQiLCJlbWFpbCI6Ik5JS0tZUkouVEFLQGdtYWlsLmNvbSIsInJvbGUiOiJDVVNUT01FUiIsImlhdCI6MTc4OTYzMzY1MSwiZXhwIjoxNzkwMjM4NDUxfQ.i3IVv73AITSDDkHl8u9IWWIPv7_6aCrAnbohJrb8nH4",
+      "userId": "user-default",
+      "expiresAt": "2026-09-24T08:27:31.535Z"
+    },
+    {
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJ1c2VyLWRlZmF1bHQiLCJlbWFpbCI6Ik5JS0tZUkouVEFLQGdtYWlsLmNvbSIsInJvbGUiOiJDVVNUT01FUiIsImlhdCI6MTc4OTYzMzg5OCwiZXhwIjoxNzkwMjM4Njk4fQ.Su0e4VgPjf3TkA9nbq2jq8stXFRLnB-TNxOkT0UA3fE",
+      "userId": "user-default",
+      "expiresAt": "2026-09-24T08:31:38.562Z"
+    },
+    {
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJ1c2VyLXIxOHhuanIiLCJlbWFpbCI6Im5pa3Nyai50YWtAZ21haWwuY29tIiwicm9sZSI6IkNVU1RPTUVSIiwiaWF0IjoxNzg5NjUyMjE1LCJleHAiOjE3OTAyNTcwMTV9.p99PFBpr-yyxaw1M_6rzhCzZDg3HJac79vEgJRVbt2k",
+      "userId": "user-r18xnjr",
+      "expiresAt": "2026-09-24T13:36:55.564Z"
+    },
+    {
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJ1c2VyLXIxOHhuanIiLCJlbWFpbCI6Im5pa3Nyai50YWtAZ21haWwuY29tIiwicm9sZSI6IkNVU1RPTUVSIiwiaWF0IjoxNzg5NjUyMjI5LCJleHAiOjE3OTAyNTcwMjl9.Z84JHqJOhFuZUhNqF51KWUjWSpl_ozdAVTfTfxb6bOk",
+      "userId": "user-r18xnjr",
+      "expiresAt": "2026-09-24T13:37:09.548Z"
+    }
+  ],
+  "addresses": [
+    {
+      "id": "addr-1",
+      "userId": "user-default",
+      "recipientName": "Nikky Tak",
+      "street": "742 Evergreen Terrace",
+      "apartment": "Apt 4B",
+      "city": "Springfield",
+      "state": "Oregon",
+      "postalCode": "97477",
+      "country": "United States",
+      "phoneNumber": "+1 (555) 234-5678",
+      "isDefault": true,
+      "createdAt": "2026-08-23T08:22:24.851Z"
+    },
+    {
+      "id": "addr-2",
+      "userId": "user-default",
+      "recipientName": "Nikky Tak (Office)",
+      "street": "100 Silicon Way",
+      "apartment": "Floor 3, Desk 12",
+      "city": "Portland",
+      "state": "Oregon",
+      "postalCode": "97201",
+      "country": "United States",
+      "phoneNumber": "+1 (555) 234-5678",
+      "isDefault": false,
+      "createdAt": "2026-09-07T08:22:24.851Z"
+    },
+    {
+      "userId": "user-r18xnjr",
+      "recipientName": "Nitesh Tak",
+      "street": "1493/42",
+      "apartment": "Mayo college",
+      "city": "Ajmer",
+      "state": "Rajasthan",
+      "postalCode": "305001",
+      "country": "India",
+      "phoneNumber": "8058618106",
+      "isDefault": false,
+      "id": "addr-8ld4p7m",
+      "createdAt": "2026-09-17T13:38:37.636Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat-1",
+      "slug": "running",
+      "name": "Running",
+      "description": "Engineered for distance, cushioning, and tempo runs."
+    },
+    {
+      "id": "cat-2",
+      "slug": "basketball",
+      "name": "Basketball",
+      "description": "High-traction hardwood grips with ankle lockdown."
+    },
+    {
+      "id": "cat-3",
+      "slug": "lifestyle",
+      "name": "Lifestyle & Sneakers",
+      "description": "Timeless street aesthetics for everyday wear."
+    },
+    {
+      "id": "cat-4",
+      "slug": "training",
+      "name": "Training & Gym",
+      "description": "Stable bases and lateral support for intense workouts."
+    }
+  ],
+  "brands": [
+    {
+      "id": "brand-1",
+      "slug": "nike",
+      "name": "Nike"
+    },
+    {
+      "id": "brand-2",
+      "slug": "adidas",
+      "name": "Adidas"
+    },
+    {
+      "id": "brand-3",
+      "slug": "jordan",
+      "name": "Jordan"
+    },
+    {
+      "id": "brand-4",
+      "slug": "new-balance",
+      "name": "New Balance"
+    },
+    {
+      "id": "brand-5",
+      "slug": "puma",
+      "name": "Puma"
+    },
+    {
+      "id": "brand-6",
+      "slug": "asics",
+      "name": "Asics"
+    }
+  ],
+  "products": [
+    {
+      "id": "prod-1",
+      "name": "Air Zoom Pegasus 40 Sprint",
+      "slug": "air-zoom-pegasus-40-sprint",
+      "sku": "NIKE-AZP40-001",
+      "brandId": "brand-1",
+      "brandName": "Nike",
+      "categoryId": "cat-1",
+      "categoryName": "Running",
+      "price": 11199,
+      "comparePrice": 12800,
+      "description": "A springy ride for every run, the Pegasus familiar, just-for-you feel returns to help you accomplish your running goals. This version features refined dual Zoom Air pods and engineered breathable mesh.",
+      "gender": "Unisex",
+      "images": [
+        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1000&q=80",
+        "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=1000&q=80",
+        "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "colors": [
+        "Crimson Red",
+        "Pure White",
+        "Triple Black"
+      ],
+      "sizes": [
+        7,
+        7.5,
+        8,
+        8.5,
+        9,
+        9.5,
+        10,
+        10.5,
+        11,
+        12
+      ],
+      "stock": 23,
+      "rating": 4.9,
+      "reviewCount": 142,
+      "tags": [
+        "Best Seller",
+        "Zoom Air",
+        "Marathon Ready"
+      ],
+      "featured": true,
+      "createdAt": "2026-09-17T08:22:24.851Z",
+      "specs": {
+        "material": "Engineered mesh with Flywire cables",
+        "cushioning": "Dual Zoom Air units + React foam",
+        "weight": "285g (US Men 9)",
+        "origin": "Vietnam"
+      }
+    },
+    {
+      "id": "prod-2",
+      "name": "Air Jordan 1 Retro High Court",
+      "slug": "air-jordan-1-retro-high-court",
+      "sku": "JOR-AJ1-002",
+      "brandId": "brand-3",
+      "brandName": "Jordan",
+      "categoryId": "cat-2",
+      "categoryName": "Basketball",
+      "price": 15199,
+      "comparePrice": 16800,
+      "description": "The sneaker that started a global revolution. Clean full-grain leather, legendary Wings logo, and encapsulating Nike Air cushioning celebrate classic hardwood royalty.",
+      "gender": "Unisex",
+      "images": [
+        "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=1000&q=80",
+        "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "colors": [
+        "Court Purple",
+        "Bred Red",
+        "Shadow Grey"
+      ],
+      "sizes": [
+        8,
+        8.5,
+        9,
+        9.5,
+        10,
+        10.5,
+        11,
+        11.5,
+        12
+      ],
+      "stock": 12,
+      "rating": 4.95,
+      "reviewCount": 310,
+      "tags": [
+        "Iconic",
+        "Collector Edition",
+        "High Top"
+      ],
+      "featured": true,
+      "createdAt": "2026-09-17T08:22:24.851Z",
+      "specs": {
+        "material": "Premium full-grain leather",
+        "cushioning": "Encapsulated Air-Sole unit in heel",
+        "weight": "430g (US Men 9)",
+        "origin": "Vietnam"
+      }
+    },
+    {
+      "id": "prod-3",
+      "name": "Ultraboost Light 23",
+      "slug": "ultraboost-light-23",
+      "sku": "ADI-UBL-003",
+      "brandId": "brand-2",
+      "brandName": "Adidas",
+      "categoryId": "cat-1",
+      "categoryName": "Running",
+      "price": 14400,
+      "comparePrice": 16000,
+      "description": "Experience epic energy with the lightest Ultraboost ever made. Featuring revolutionary Light BOOST foam cushioning and Linear Energy Push system for unstoppable momentum.",
+      "gender": "Unisex",
+      "images": [
+        "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?auto=format&fit=crop&w=1000&q=80",
+        "https://images.unsplash.com/photo-1512374382149-233c42b6a83b?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "colors": [
+        "Cloud White",
+        "Core Black",
+        "Solar Orange"
+      ],
+      "sizes": [
+        7,
+        8,
+        8.5,
+        9,
+        9.5,
+        10,
+        10.5,
+        11,
+        12
+      ],
+      "stock": 18,
+      "rating": 4.85,
+      "reviewCount": 88,
+      "tags": [
+        "Light BOOST",
+        "Energy Return",
+        "Eco Friendly"
+      ],
+      "featured": true,
+      "createdAt": "2026-09-17T08:22:24.851Z",
+      "specs": {
+        "material": "Primeknit+ textile upper (50% Parley Ocean Plastic)",
+        "cushioning": "Light BOOST midsole",
+        "weight": "290g (US Men 9)",
+        "origin": "Indonesia"
+      }
+    },
+    {
+      "id": "prod-4",
+      "name": "New Balance 990v6 Made in USA",
+      "slug": "new-balance-990v6-made-in-usa",
+      "sku": "NB-990V6-004",
+      "brandId": "brand-4",
+      "brandName": "New Balance",
+      "categoryId": "cat-3",
+      "categoryName": "Lifestyle & Sneakers",
+      "price": 15999,
+      "comparePrice": 17600,
+      "description": "The pinnacle of understated luxury. Built with pigskin suede overlays and FuelCell foam midsole cushioning, offering superior cloud-like support with heritage aesthetic.",
+      "gender": "Unisex",
+      "images": [
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=1000&q=80",
+        "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "colors": [
+        "Castlerock Grey",
+        "Navy Blue",
+        "Triple Black"
+      ],
+      "sizes": [
+        7.5,
+        8,
+        8.5,
+        9,
+        9.5,
+        10,
+        10.5,
+        11,
+        12
+      ],
+      "stock": 9,
+      "rating": 4.92,
+      "reviewCount": 164,
+      "tags": [
+        "Made in USA",
+        "Heritage Suede",
+        "FuelCell"
+      ],
+      "featured": true,
+      "createdAt": "2026-09-17T08:22:24.851Z",
+      "specs": {
+        "material": "Suede and mesh upper",
+        "cushioning": "FuelCell foam and ENCAP midsole",
+        "weight": "360g (US Men 9)",
+        "origin": "United States"
+      }
+    },
+    {
+      "id": "prod-5",
+      "name": "Puma RS-X Efekt Retro",
+      "slug": "puma-rs-x-efekt-retro",
+      "sku": "PUM-RSX-005",
+      "brandId": "brand-5",
+      "brandName": "Puma",
+      "categoryId": "cat-3",
+      "categoryName": "Lifestyle & Sneakers",
+      "price": 9599,
+      "comparePrice": 10400,
+      "description": "Chunky, disruptive, and unapologetically retro. The RS-X stands for RE-IMAGINATION with progressive details, nubuck overlays, and comfortable Running System cushioning.",
+      "gender": "Unisex",
+      "images": [
+        "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=1000&q=80",
+        "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "colors": [
+        "Chalk White",
+        "Pastel Pink",
+        "Deep Forest"
+      ],
+      "sizes": [
+        7,
+        7.5,
+        8,
+        8.5,
+        9,
+        9.5,
+        10,
+        11
+      ],
+      "stock": 15,
+      "rating": 4.7,
+      "reviewCount": 56,
+      "tags": [
+        "Streetwear",
+        "Chunky Sole",
+        "RS Tech"
+      ],
+      "featured": false,
+      "createdAt": "2026-09-17T08:22:24.851Z",
+      "specs": {
+        "material": "Mesh base with suede & synthetic overlays",
+        "cushioning": "PU midsole with RS technology",
+        "weight": "380g (US Men 9)",
+        "origin": "Vietnam"
+      }
+    },
+    {
+      "id": "prod-6",
+      "name": "Asics Gel-Kayano 30 Stability",
+      "slug": "asics-gel-kayano-30-stability",
+      "sku": "ASC-GK30-006",
+      "brandId": "brand-6",
+      "brandName": "Asics",
+      "categoryId": "cat-1",
+      "categoryName": "Running",
+      "price": 12799,
+      "comparePrice": 14400,
+      "description": "Adaptive stability and premium comfort for long-distance road runners. The 4D GUIDANCE SYSTEM helps provide adaptive stability during your marathon and training workouts.",
+      "gender": "Unisex",
+      "images": [
+        "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=1000&q=80",
+        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "colors": [
+        "French Blue",
+        "Electric Lime",
+        "Steel Grey"
+      ],
+      "sizes": [
+        8,
+        8.5,
+        9,
+        9.5,
+        10,
+        10.5,
+        11,
+        12
+      ],
+      "stock": 14,
+      "rating": 4.88,
+      "reviewCount": 92,
+      "tags": [
+        "4D Guidance",
+        "Gel Tech",
+        "Stability"
+      ],
+      "featured": false,
+      "createdAt": "2026-09-17T08:22:24.851Z",
+      "specs": {
+        "material": "Stretch knit upper",
+        "cushioning": "FF BLAST PLUS ECO & PureGEL technology",
+        "weight": "303g (US Men 9)",
+        "origin": "Vietnam"
+      }
+    },
+    {
+      "id": "prod-7",
+      "name": "Nike Metcon 9 Cross-Training",
+      "slug": "nike-metcon-9-cross-training",
+      "sku": "NIKE-MC9-007",
+      "brandId": "brand-1",
+      "brandName": "Nike",
+      "categoryId": "cat-4",
+      "categoryName": "Training & Gym",
+      "price": 11999,
+      "description": "The gold standard for lifting, conditioning, and HIIT. Features a wider Hyperlift plate in the heel and durable rubber rope wrap for maximum power and grip.",
+      "gender": "Men",
+      "images": [
+        "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=1000&q=80",
+        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "colors": [
+        "Triple Black",
+        "Smoke Grey",
+        "University Red"
+      ],
+      "sizes": [
+        8,
+        8.5,
+        9,
+        9.5,
+        10,
+        10.5,
+        11,
+        11.5,
+        12
+      ],
+      "stock": 20,
+      "rating": 4.8,
+      "reviewCount": 74,
+      "tags": [
+        "Crossfit",
+        "Hyperlift",
+        "Heavy Lifting"
+      ],
+      "featured": false,
+      "createdAt": "2026-09-17T08:22:24.851Z",
+      "specs": {
+        "material": "Breathable engineered textile with haptic print",
+        "cushioning": "Dual-density foam",
+        "weight": "345g (US Men 9)",
+        "origin": "Vietnam"
+      }
+    },
+    {
+      "id": "prod-8",
+      "name": "Adidas Forum Low Classic Court",
+      "slug": "adidas-forum-low-classic-court",
+      "sku": "ADI-FRL-008",
+      "brandId": "brand-2",
+      "brandName": "Adidas",
+      "categoryId": "cat-3",
+      "categoryName": "Lifestyle & Sneakers",
+      "price": 8799,
+      "comparePrice": 10000,
+      "description": "Born on the 80s hardwood and adopted by skateboarders and hip-hop icons. Features the distinctive X-strap detail and supple coated leather upper.",
+      "gender": "Unisex",
+      "images": [
+        "https://images.unsplash.com/photo-1512374382149-233c42b6a83b?auto=format&fit=crop&w=1000&q=80",
+        "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "colors": [
+        "Cloud White",
+        "Collegiate Green",
+        "Royal Blue"
+      ],
+      "sizes": [
+        7,
+        7.5,
+        8,
+        8.5,
+        9,
+        9.5,
+        10,
+        10.5,
+        11
+      ],
+      "stock": 16,
+      "rating": 4.75,
+      "reviewCount": 65,
+      "tags": [
+        "Vintage Classic",
+        "X-Strap",
+        "Streetwear"
+      ],
+      "featured": false,
+      "createdAt": "2026-09-17T08:22:24.851Z",
+      "specs": {
+        "material": "Leather upper with terry lining",
+        "cushioning": "Classic EVA midsole wedge",
+        "weight": "390g (US Men 9)",
+        "origin": "China"
+      }
+    }
+  ],
+  "orders": [
+    {
+      "id": "order-utqjy6t",
+      "orderNumber": "SOV-2026-769116",
+      "userId": "user-r18xnjr",
+      "userEmail": "niksrj.tak@gmail.com",
+      "userName": "Nitesh Tak",
+      "shippingAddress": {
+        "id": "addr-temp-1789652317628",
+        "userId": "user-r18xnjr",
+        "recipientName": "Nitesh Tak",
+        "street": "1493/42",
+        "apartment": "Mayo college",
+        "city": "Ajmer",
+        "state": "Rajasthan",
+        "postalCode": "305001",
+        "country": "India",
+        "phoneNumber": "8058618106",
+        "isDefault": false,
+        "createdAt": "2026-09-17T13:38:37.628Z"
+      },
+      "status": "PAYMENT_VERIFIED",
+      "subtotal": 11199,
+      "tax": 896,
+      "shippingFee": 0,
+      "total": 12095,
+      "deliveryNotes": "Home address",
+      "items": [
+        {
+          "id": "item-yg3wzji",
+          "orderId": "order-utqjy6t",
+          "productId": "prod-1",
+          "productName": "Air Zoom Pegasus 40 Sprint",
+          "productImage": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1000&q=80",
+          "quantity": 1,
+          "size": 8,
+          "color": "Crimson Red",
+          "unitPrice": 11199,
+          "totalPrice": 11199
+        }
+      ],
+      "payment": {
+        "id": "pay-7wqeoc5",
+        "orderId": "order-utqjy6t",
+        "method": "QR_CODE",
+        "qrPayload": "upi://pay?pa=solevault.pay@oksbi&pn=SoleVault%20Premium%20Shoes&am=12095&cu=INR&tn=Order_SOV-2026-769116&tr=order-utqjy6t",
+        "qrDataUrl": "data:image/png;base64,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",
+        "status": "COMPLETED",
+        "amount": 12095,
+        "transactionRef": "UPI-TXN-328502",
+        "paidAt": "2026-09-17T13:38:48.505Z"
+      },
+      "createdAt": "2026-09-17T13:38:37.647Z",
+      "updatedAt": "2026-09-17T13:38:48.506Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "email-mwbpbtc",
+      "orderId": "order-utqjy6t",
+      "orderNumber": "SOV-2026-769116",
+      "userId": "user-r18xnjr",
+      "recipient": "niksrj.tak@gmail.com",
+      "subject": "Payment Received: Invoice for SOV-2026-769116 - SoleVault",
+      "htmlBody": "\n      <div style=\"font-family: 'Plus Jakarta Sans', Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 24px; color: #1e293b; background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px;\">\n        <div style=\"text-align: center; padding-bottom: 20px; border-bottom: 2px solid #16a34a;\">\n          <h1 style=\"margin: 0; color: #16a34a; font-size: 26px; font-weight: 800;\">Payment Verified</h1>\n          <p style=\"margin: 4px 0 0; color: #64748b; font-size: 13px;\">Official Tax Invoice & Payment Receipt</p>\n        </div>\n        \n        <div style=\"padding: 24px 0;\">\n          <p style=\"font-size: 14px; line-height: 1.6; color: #334155;\">\n            Hi <strong>Nitesh Tak</strong>,<br/>\n            Your QR code payment of <strong>₹12,095</strong> for order <strong>SOV-2026-769116</strong> has been successfully verified!\n          </p>\n\n          <div style=\"background-color: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 8px; padding: 14px; margin: 16px 0;\">\n            <p style=\"margin: 0; font-size: 13px; color: #166534;\">\n              <strong>Transaction Ref:</strong> UPI-TXN-328502<br/>\n              <strong>Payment Method:</strong> Store UPI QR Code<br/>\n              <strong>Date & Time:</strong> 17/9/2026, 7:08:48 pm\n            </p>\n          </div>\n\n          <p style=\"font-size: 13px; color: #64748b;\">Our warehouse has initiated packaging. Tracking details will update once dispatched.</p>\n        </div>\n      </div>\n    ",
+      "sentAt": "2026-09-17T13:38:48.506Z"
+    },
+    {
+      "id": "email-76azgeo",
+      "orderId": "order-utqjy6t",
+      "orderNumber": "SOV-2026-769116",
+      "userId": "user-r18xnjr",
+      "recipient": "niksrj.tak@gmail.com",
+      "subject": "Payment Received: Invoice for SOV-2026-769116 - SoleVault",
+      "htmlBody": "\n      <div style=\"font-family: 'Plus Jakarta Sans', Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 24px; color: #1e293b; background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px;\">\n        <div style=\"text-align: center; padding-bottom: 20px; border-bottom: 2px solid #16a34a;\">\n          <h1 style=\"margin: 0; color: #16a34a; font-size: 26px; font-weight: 800;\">Payment Verified</h1>\n          <p style=\"margin: 4px 0 0; color: #64748b; font-size: 13px;\">Official Tax Invoice & Payment Receipt</p>\n        </div>\n        \n        <div style=\"padding: 24px 0;\">\n          <p style=\"font-size: 14px; line-height: 1.6; color: #334155;\">\n            Hi <strong>Nitesh Tak</strong>,<br/>\n            Your QR code payment of <strong>₹12,095</strong> for order <strong>SOV-2026-769116</strong> has been successfully verified!\n          </p>\n\n          <div style=\"background-color: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 8px; padding: 14px; margin: 16px 0;\">\n            <p style=\"margin: 0; font-size: 13px; color: #166534;\">\n              <strong>Transaction Ref:</strong> UPI-TXN-323974<br/>\n              <strong>Payment Method:</strong> Store UPI QR Code<br/>\n              <strong>Date & Time:</strong> 17/9/2026, 7:08:43 pm\n            </p>\n          </div>\n\n          <p style=\"font-size: 13px; color: #64748b;\">Our warehouse has initiated packaging. Tracking details will update once dispatched.</p>\n        </div>\n      </div>\n    ",
+      "sentAt": "2026-09-17T13:38:43.979Z"
+    },
+    {
+      "id": "email-dkc673w",
+      "orderId": "order-utqjy6t",
+      "orderNumber": "SOV-2026-769116",
+      "userId": "user-r18xnjr",
+      "recipient": "niksrj.tak@gmail.com",
+      "subject": "Order Confirmed: SOV-2026-769116 - SoleVault Shoes",
+      "htmlBody": "\n      <div style=\"font-family: 'Plus Jakarta Sans', Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 24px; color: #1e293b; background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px;\">\n        <div style=\"text-align: center; padding-bottom: 20px; border-bottom: 2px solid #0f172a;\">\n          <h1 style=\"margin: 0; color: #0f172a; font-size: 26px; font-weight: 800; letter-spacing: -0.5px;\">SoleVault</h1>\n          <p style=\"margin: 4px 0 0; color: #64748b; font-size: 13px;\">Premium Footwear & Exclusive Kicks</p>\n        </div>\n        \n        <div style=\"padding: 24px 0;\">\n          <h2 style=\"font-size: 18px; color: #0f172a; margin-top: 0;\">Order Placed: SOV-2026-769116</h2>\n          <p style=\"font-size: 14px; line-height: 1.6; color: #334155;\">\n            Hi <strong>Nitesh Tak</strong>,<br/>\n            Thank you for shopping with SoleVault! We have received your order. Please complete the QR payment to dispatch your kicks.\n          </p>\n\n          <div style=\"background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; margin: 20px 0;\">\n            <p style=\"margin: 0 0 8px; font-size: 12px; text-transform: uppercase; color: #64748b; font-weight: 700;\">Shipping To:</p>\n            <p style=\"margin: 0; font-size: 14px; font-weight: 600; color: #0f172a;\">Nitesh Tak</p>\n            <p style=\"margin: 2px 0; font-size: 13px; color: #475569;\">1493/42 Mayo college</p>\n            <p style=\"margin: 0; font-size: 13px; color: #475569;\">Ajmer, Rajasthan 305001</p>\n          </div>\n\n          <h3 style=\"font-size: 15px; color: #0f172a; margin-bottom: 12px;\">Order Summary</h3>\n          <table style=\"width: 100%; border-collapse: collapse; font-size: 13px;\">\n            <thead>\n              <tr style=\"border-bottom: 1px solid #cbd5e1; text-align: left; color: #64748b;\">\n                <th style=\"padding: 8px 0;\">Item</th>\n                <th style=\"padding: 8px 0; text-align: center;\">Size / Color</th>\n                <th style=\"padding: 8px 0; text-align: center;\">Qty</th>\n                <th style=\"padding: 8px 0; text-align: right;\">Amount</th>\n              </tr>\n            </thead>\n            <tbody>\n              \n                <tr style=\"border-bottom: 1px solid #f1f5f9;\">\n                  <td style=\"padding: 12px 0; font-weight: 600; color: #0f172a;\">Air Zoom Pegasus 40 Sprint</td>\n                  <td style=\"padding: 12px 0; text-align: center; color: #64748b;\">US 8 | Crimson Red</td>\n                  <td style=\"padding: 12px 0; text-align: center; color: #0f172a;\">1</td>\n                  <td style=\"padding: 12px 0; text-align: right; font-weight: 600; color: #0f172a;\">₹11,199</td>\n                </tr>\n              \n            </tbody>\n          </table>\n\n          <div style=\"margin-top: 16px; padding-top: 16px; border-top: 2px solid #e2e8f0; font-size: 14px;\">\n            <div style=\"display: flex; justify-content: space-between; margin-bottom: 6px;\">\n              <span style=\"color: #64748b;\">Subtotal:</span>\n              <span style=\"font-weight: 600;\">₹11,199</span>\n            </div>\n            <div style=\"display: flex; justify-content: space-between; margin-bottom: 6px;\">\n              <span style=\"color: #64748b;\">Tax (8% GST):</span>\n              <span style=\"font-weight: 600;\">₹896</span>\n            </div>\n            <div style=\"display: flex; justify-content: space-between; margin-bottom: 6px;\">\n              <span style=\"color: #64748b;\">Delivery:</span>\n              <span style=\"font-weight: 600;\">FREE</span>\n            </div>\n            <div style=\"display: flex; justify-content: space-between; margin-top: 10px; padding-top: 10px; border-top: 1px dashed #cbd5e1; font-size: 16px; font-weight: 800; color: #0f172a;\">\n              <span>Total Payable:</span>\n              <span>₹12,095</span>\n            </div>\n          </div>\n\n          <div style=\"margin-top: 24px; text-align: center; padding: 16px; background-color: #eff6ff; border-radius: 8px;\">\n            <p style=\"margin: 0 0 6px; font-weight: 700; color: #1e40af; font-size: 14px;\">Exclusive Payment: Scan Store QR Code</p>\n            <p style=\"margin: 0; font-size: 12px; color: #3b82f6;\">Pay via any UPI App (Google Pay, PhonePe, Paytm). Once paid, tap 'Connect via WhatsApp' to notify warehouse fulfillment team.</p>\n          </div>\n        </div>\n\n        <div style=\"border-top: 1px solid #e2e8f0; padding-top: 16px; text-align: center; color: #94a3b8; font-size: 12px;\">\n          <p style=\"margin: 0;\">SoleVault Footwear Inc. • All Rights Reserved</p>\n          <p style=\"margin: 4px 0 0;\">This transactional notification was transmitted directly to niksrj.tak@gmail.com.</p>\n        </div>\n      </div>\n    ",
+      "sentAt": "2026-09-17T13:38:37.691Z"
+    }
+  ],
+  "settings": {
+    "publishedQrCode": "data:image/png;base64,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",
+    "upiId": "solevault.pay@oksbi",
+    "merchantName": "SoleVault Premium Shoes",
+    "notes": "Scan via Google Pay, PhonePe, Paytm, BHIM, or any UPI banking app.",
+    "updatedAt": "2026-09-17T10:11:09.658Z"
+  }
+}

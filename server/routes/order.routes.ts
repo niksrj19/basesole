@@ -1,0 +1,12 @@
+import { Router } from 'express';
+import { authMiddleware, requireAdmin } from '../auth/auth.middleware.ts';
+import { confirmPaymentController, createOrderController, emailReceiptController, getOrderController, listOrdersController, updateOrderStatusController } from '../controllers/order.controller.ts';
+export const orderRoutes = Router();
+orderRoutes.use(authMiddleware);
+orderRoutes.post('/', createOrderController);
+orderRoutes.post('/:id/confirm-payment', confirmPaymentController);
+orderRoutes.get('/', listOrdersController);
+orderRoutes.get('/:id', getOrderController);
+orderRoutes.get('/:id/email-receipt', emailReceiptController);
+export const adminOrderRoutes = Router();
+adminOrderRoutes.put('/:id/status', authMiddleware, requireAdmin, updateOrderStatusController);

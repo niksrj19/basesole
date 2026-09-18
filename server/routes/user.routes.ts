@@ -1,0 +1,10 @@
+import { Router } from 'express';
+import { authMiddleware } from '../auth/auth.middleware.ts';
+import { createAddress, editAddress, editProfile, getAddresses, removeAddress } from '../controllers/user.controller.ts';
+export const userRoutes = Router();
+userRoutes.use(authMiddleware);
+userRoutes.get('/addresses', getAddresses);
+userRoutes.post('/addresses', createAddress);
+userRoutes.put('/addresses/:id', editAddress);
+userRoutes.delete('/addresses/:id', removeAddress);
+userRoutes.put('/profile', editProfile);

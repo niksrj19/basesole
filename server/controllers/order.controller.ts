@@ -1,0 +1,11 @@
+import { Request, Response } from 'express';
+import { AuthenticatedRequest } from '../auth/auth.middleware.ts';
+import { confirmPayment, createOrder, getOrder, listNotifications, listOrders } from '../services/order.service.ts';
+import { storeRepository } from '../repositories/store.repository.ts';
+
+export async function createOrderController(req: AuthenticatedRequest, res: Response) { const { shippingAddress, items, deliveryNotes } = req.body; if (!shippingAddress || !Array.isArray(items) || !items.length) return res.status(400).json({ error: 'Shipping address and items are required' }); try { res.status(201).json({ order: await createOrder({ userId: req.user!.id, shippingAddress, items, deliveryNotes }) }); } catch (error: any) { res.status(400).json({ error: error.message || 'Failed to create order' }); } }
+export async function confirmPaymentController(req: AuthenticatedRequest, res: Response) { const order = await confirmPayment(req.params.id, req.body.transactionRef); if (!order) return res.status(404).json({ error: 'Order not found' }); res.json({ order, message: 'Payment confirmed and verified via QR receipt' }); }
+export async function listOrdersController(req: AuthenticatedRequest, res: Response) { res.json({ orders: await listOrders(req.user!.role === 'ADMIN' ? undefined : req.user!.id) }); }
+export async function getOrderController(req: AuthenticatedRequest, res: Response) { const order = await getOrder(req.params.id); if (!order) return res.status(404).json({ error: 'Order not found' }); if (req.user!.role !== 'ADMIN' && order.userId !== req.user!.id) return res.status(403).json({ error: 'Access denied' }); res.json({ order }); }
+export async function emailReceiptController(req: AuthenticatedRequest, res: Response) { const notifications = await listNotifications(req.user!.role === 'ADMIN' ? undefined : req.user!.id); const notification = notifications.find((item) => item.orderId === req.params.id); if (!notification) return res.status(404).json({ error: 'Email receipt not found' }); res.json({ notification }); }
+export async function updateOrderStatusController(req: AuthenticatedRequest, res: Response) { const order = await storeRepository.updateOrderStatus(req.params.id, req.body.status); if (!order) return res.status(404).json({ error: 'Order not found' }); res.json({ order }); }

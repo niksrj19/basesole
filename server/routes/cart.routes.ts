@@ -1,0 +1,10 @@
+import { Router } from 'express';
+import { authMiddleware } from '../auth/auth.middleware.ts';
+import { addCartItemController, clearCartController, deleteCartItemController, getCartController, updateCartItemController } from '../controllers/cart.controller.ts';
+export const cartRoutes = Router();
+cartRoutes.use(authMiddleware);
+cartRoutes.get('/', getCartController);
+cartRoutes.post('/items', addCartItemController);
+cartRoutes.put('/items/:id', updateCartItemController);
+cartRoutes.delete('/items/:id', deleteCartItemController);
+cartRoutes.delete('/', clearCartController);

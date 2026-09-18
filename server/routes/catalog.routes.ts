@@ -1,0 +1,11 @@
+import { Router } from 'express';
+import { authMiddleware, requireAdmin } from '../auth/auth.middleware.ts';
+import { brands, categories, createProductController, deleteProductController, getProductController, listProducts, updateProductController } from '../controllers/catalog.controller.ts';
+export const catalogRoutes = Router();
+catalogRoutes.get('/products', listProducts);
+catalogRoutes.get('/products/:id', getProductController);
+catalogRoutes.post('/products', authMiddleware, requireAdmin, createProductController);
+catalogRoutes.put('/products/:id', authMiddleware, requireAdmin, updateProductController);
+catalogRoutes.delete('/products/:id', authMiddleware, requireAdmin, deleteProductController);
+catalogRoutes.get('/categories', categories);
+catalogRoutes.get('/brands', brands);

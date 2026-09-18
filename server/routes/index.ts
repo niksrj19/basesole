@@ -1,0 +1,20 @@
+import { Router } from 'express';
+import { authRoutes } from './auth.routes.ts';
+import { cartRoutes } from './cart.routes.ts';
+import { catalogRoutes } from './catalog.routes.ts';
+import { userRoutes } from './user.routes.ts';
+import { orderRoutes, adminOrderRoutes } from './order.routes.ts';
+import { adminRoutes } from './admin.routes.ts';
+import { settingsRoutes } from './settings.routes.ts';
+
+export const apiRouter = Router();
+apiRouter.use('/auth', authRoutes);
+apiRouter.use('/cart', cartRoutes);
+apiRouter.use('/', catalogRoutes);
+apiRouter.use('/user', userRoutes);
+apiRouter.use('/orders', orderRoutes);
+apiRouter.use('/admin/orders', adminOrderRoutes);
+apiRouter.use('/admin', adminRoutes);
+apiRouter.use('/settings', settingsRoutes);
+apiRouter.use('/payment-qr', settingsRoutes);
+apiRouter.use('/admin/payment-qr', settingsRoutes);

@@ -1,0 +1,6 @@
+{
+  "name": "SoleVault - Shoes Store",
+  "description": "Responsive shoes e-commerce store with QR-code payment, product catalog, cart, user profiles, order tracking, admin inventory dashboard, and multi-language support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
