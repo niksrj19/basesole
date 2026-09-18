@@ -6,10 +6,8 @@ const GOOGLE_ADMIN_EMAILS = new Set(['niksrj.tak@gmail.com']);
 
 export function getGoogleRedirectUri() {
   const configured = process.env.APP_URL?.trim();
-  const appUrl = configured && /^https?:\/\//i.test(configured) && configured !== 'MY_APP_URL'
-    ? configured
-    : 'http://localhost:3000';
-  return `${appUrl.replace(/\/$/, '')}/api/auth/callback/google`;
+  const appUrl = process.env.APP_URL?.trim()
+  return `${appUrl}/api/auth/callback/google`;
 }
 
 function getGoogleUserRole(email: string): 'ADMIN' | 'CUSTOMER' {
