@@ -799,7 +799,7 @@ Kindly confirm payment receipt and dispatch tracking updates. Thank you!`;
                 <span className="font-mono font-bold text-slate-900 truncate">{displayUpiId}</span>
               </div>
               <button
-                onClick={() => handleCopyUpi(displayUpiId)}
+                onClick={() => handleCopyUpi(displayUpiId || '')}
                 className="px-3 py-1.5 bg-white border border-slate-300 hover:bg-slate-50 text-slate-700 rounded-xl font-semibold text-xs flex items-center gap-1 shrink-0"
               >
                 {copiedUpi ? (

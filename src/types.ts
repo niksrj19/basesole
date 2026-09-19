@@ -38,6 +38,7 @@ export interface Category {
   slug: string;
   name: string;
   description: string;
+  imageUrl?: string;
 }
 
 export interface Brand {

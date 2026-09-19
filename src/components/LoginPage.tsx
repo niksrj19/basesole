@@ -1,56 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import {
   ShieldCheck,
-  ArrowRight,
-  Sparkles,
   AlertCircle,
-  ExternalLink,
-  Lock,
-  CheckCircle2,
-  Info,
   QrCode,
-  LogIn,
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext.tsx';
 
 interface LoginPageProps {
   onLoginSuccess: (redirectTarget?: string) => void;
-  onNavigateAdminLogin?: () => void;
 }
 
 export const LoginPage: React.FC<LoginPageProps> = ({
   onLoginSuccess,
-  onNavigateAdminLogin,
 }) => {
-  const { loginWithGoogle, loginWithGoogleOAuthCode } = useAuth();
-  const [oauthConfigured, setOauthConfigured] = useState<boolean | null>(null);
-  const [oauthUrl, setOauthUrl] = useState<string>('');
-  const [redirectUri, setRedirectUri] = useState<string>('');
+  const { loginWithGoogleOAuthCode } = useAuth();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [customEmail, setCustomEmail] = useState('NIKKYRJ.TAK@gmail.com');
-  const [customName, setCustomName] = useState('Nikky Tak');
 
   const isRedirectedFromCheckout =
     typeof window !== 'undefined' &&
     sessionStorage.getItem('solevault_redirect_after_login') === 'checkout';
-
-  // Check Google OAuth configuration status on mount
-  useEffect(() => {
-    fetch('/api/auth/google/url')
-      .then((res) => res.json())
-      .then((data) => {
-        setOauthConfigured(data.configured);
-        setRedirectUri(data.redirectUri || `${window.location.origin}/auth/callback`);
-        if (data.configured && data.url) {
-          setOauthUrl(data.url);
-        }
-      })
-      .catch(() => {
-        setOauthConfigured(false);
-        setRedirectUri(`${window.location.origin}/auth/callback`);
-      });
-  }, []);
 
   // Listen for OAuth postMessage callback from popup window
   useEffect(() => {
@@ -109,31 +78,12 @@ export const LoginPage: React.FC<LoginPageProps> = ({
           setLoading(false);
         }
       } else {
-        // OAuth secret pending in environment (user mentioned they will provide later)
-        // Fallback to instant verified Google account login
-        await handleDirectGoogleSignIn(customEmail, customName);
+        setError('Google OAuth 2.0 is not configured. Please try again later.');
+        setLoading(false);
       }
     } catch (err: any) {
       setError(err.message || 'Failed to initiate Google OAuth flow.');
       setLoading(false);
-    }
-  };
-
-  const handleDirectGoogleSignIn = async (email: string, name: string) => {
-    setError(null);
-    const normalized = email.trim().toLowerCase();
-
-    if (!normalized.endsWith('@gmail.com') && !normalized.endsWith('@googlemail.com')) {
-      setError('Authentication rule: Only verified Google accounts (@gmail.com) are permitted.');
-      setLoading(false);
-      return;
-    }
-
-    setLoading(true);
-    const success = await loginWithGoogle(normalized, name);
-    setLoading(false);
-    if (success) {
-      handleComplete();
     }
   };
 
@@ -159,10 +109,10 @@ export const LoginPage: React.FC<LoginPageProps> = ({
             SV
           </div>
           <h1 className="text-2xl font-extrabold text-slate-900 tracking-tight">
-            Sign In with Google
+            Sign in with Google
           </h1>
           <p className="text-xs text-slate-500">
-            Login strictly using Google OAuth 2.0 (@gmail.com) with encrypted JWT session security.
+            Secure login with Google OAuth 2.0.
           </p>
         </div>
 
@@ -201,91 +151,11 @@ export const LoginPage: React.FC<LoginPageProps> = ({
               />
             </svg>
             <span>
-              {loading
-                ? 'Connecting to Google...'
-                : oauthConfigured
-                ? 'Sign in with Google OAuth 2.0'
-                : 'Sign in with Google Account'}
+              {loading ? 'Connecting to Google...' : 'Sign in with Google'}
             </span>
           </button>
         </div>
 
-        {/* Google Account Input Option */}
-        <div className="pt-2 border-t border-slate-100">
-          <p className="text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-3 text-center">
-            Or specify your Google Account (@gmail.com)
-          </p>
-
-          <div className="space-y-3">
-            <div>
-              <label className="block text-xs font-semibold text-slate-700 mb-1">
-                Google Gmail Address
-              </label>
-              <input
-                type="email"
-                value={customEmail}
-                onChange={(e) => setCustomEmail(e.target.value)}
-                placeholder="yourname@gmail.com"
-                className="w-full text-xs p-3 bg-slate-50 border border-slate-200 rounded-xl focus:bg-white focus:ring-2 focus:ring-blue-600 focus:outline-none font-medium"
-              />
-            </div>
-            <div>
-              <label className="block text-xs font-semibold text-slate-700 mb-1">
-                Display Name
-              </label>
-              <input
-                type="text"
-                value={customName}
-                onChange={(e) => setCustomName(e.target.value)}
-                placeholder="Your Full Name"
-                className="w-full text-xs p-3 bg-slate-50 border border-slate-200 rounded-xl focus:bg-white focus:ring-2 focus:ring-blue-600 focus:outline-none font-medium"
-              />
-            </div>
-
-            <button
-              onClick={() => handleDirectGoogleSignIn(customEmail, customName)}
-              disabled={loading}
-              className="w-full py-2.5 px-4 bg-slate-900 hover:bg-slate-800 text-white rounded-xl text-xs font-bold transition-all shadow-sm flex items-center justify-center gap-2"
-            >
-              <LogIn className="w-3.5 h-3.5" />
-              <span>Continue with {customEmail || 'Gmail'}</span>
-            </button>
-          </div>
-        </div>
-
-        {/* OAuth Configuration Helper for User */}
-        <div className="p-3.5 bg-slate-50 border border-slate-200 rounded-2xl text-[11px] text-slate-600 space-y-2">
-          <div className="flex items-center gap-1.5 font-bold text-slate-800">
-            <Info className="w-3.5 h-3.5 text-blue-600" />
-            <span>Google Cloud OAuth 2.0 Configuration</span>
-          </div>
-          <p className="leading-normal text-slate-500">
-            Callback Redirect URI to register in your Google Cloud Console:
-          </p>
-          <code className="block p-2 bg-white border border-slate-200 rounded-lg text-slate-800 font-mono text-[10px] break-all select-all">
-            {redirectUri || `${window.location.origin}/auth/callback`}
-          </code>
-          <p className="text-[10px] text-slate-400">
-            Configure <code className="font-mono">GOOGLE_CLIENT_ID</code> and <code className="font-mono">GOOGLE_CLIENT_SECRET</code> in <code className="font-mono">.env</code> to activate live OAuth popups.
-          </p>
-        </div>
-
-        {/* Admin Portal Navigation Link */}
-        <div className="pt-2 text-center">
-          <button
-            onClick={() => {
-              if (onNavigateAdminLogin) {
-                onNavigateAdminLogin();
-              } else {
-                window.location.hash = '#/admin-login';
-              }
-            }}
-            className="text-xs font-semibold text-slate-500 hover:text-blue-600 transition-colors inline-flex items-center gap-1"
-          >
-            <Lock className="w-3 h-3" />
-            <span>SoleVault Store Administrator? Enter Admin Portal →</span>
-          </button>
-        </div>
       </div>
     </div>
   );

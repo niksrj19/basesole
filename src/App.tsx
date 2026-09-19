@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState, useEffect } from 'react';
 import { AuthProvider, useAuth } from './context/AuthContext.tsx';
 import { LanguageProvider, useLanguage } from './context/LanguageContext.tsx';
@@ -187,7 +189,6 @@ function AppContent() {
         {currentView === 'login' && (
           <LoginPage
             onLoginSuccess={(target) => handleNavigate(target || 'home')}
-            onNavigateAdminLogin={() => handleNavigate('admin-login')}
           />
         )}
       </main>

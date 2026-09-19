@@ -4,7 +4,12 @@ import { createProduct, deleteProduct, getProduct, listBrands, listCatalog, list
 
 export async function listProducts(req: Request, res: Response) {
   const query = req.query as Record<string, string>;
-  const filters: ProductFilters = { ...query, size: query.size && Number(query.size), minPrice: query.minPrice && Number(query.minPrice), maxPrice: query.maxPrice && Number(query.maxPrice) };
+  const filters: ProductFilters = {
+    ...query,
+    size: query.size ? Number(query.size) : undefined,
+    minPrice: query.minPrice ? Number(query.minPrice) : undefined,
+    maxPrice: query.maxPrice ? Number(query.maxPrice) : undefined,
+  };
   res.json(await listCatalog(filters));
 }
 export async function getProductController(req: Request, res: Response) { const product = await getProduct(req.params.id); if (!product) return res.status(404).json({ error: 'Product not found' }); res.json({ product }); }
