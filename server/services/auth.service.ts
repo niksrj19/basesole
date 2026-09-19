@@ -7,7 +7,9 @@ const GOOGLE_ADMIN_EMAILS = new Set(['niksrj.tak@gmail.com']);
 export function getGoogleRedirectUri() {
   const configured = process.env.APP_URL?.trim();
   const appUrl = process.env.APP_URL?.trim()
-  return `${appUrl}/api/auth/callback/google`;
+
+  console.log('', appUrl, configured);
+  return `${configured}/api/auth/callback/google`;
 }
 
 function getGoogleUserRole(email: string): 'ADMIN' | 'CUSTOMER' {
