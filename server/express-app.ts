@@ -2,7 +2,7 @@ import dotenv from 'dotenv';
 import express from 'express';
 import { apiRouter } from './routes/index.ts';
 
-dotenv.config({ override: true });
+dotenv.config();
 
 export function createExpressApp() {
   const app = express();
